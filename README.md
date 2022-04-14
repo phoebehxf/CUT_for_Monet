@@ -5,13 +5,23 @@ This project is originally published in https://github.com/taesungp/contrastive-
 ## Environment
 run ```pip install -r requirements.txt```
 
+## Preparation
+Download monet_jpg and photo_jpg from Kaggle [I’m Something of a Painter Myself](https://www.kaggle.com/competitions/gan-getting-started/data).
+
 ## Training
-The input images is provided in 'datasets\photo_to_monet\trainA' and 'datasets\photo_to_monet\trainB'.
+Put images in corresponding folders:
+
+- photo_jpg content -> 'datasets\photo_to_monet\trainA' 
+- monet_jpg content -> 'datasets\photo_to_monet\trainB'.
 
 Run 'train.py' will start training from scratch.
 
 ## Testing
-The pretrained model (iter=60000) is provided in 'checkpoints\photo_to_monet'. The input images is provided in 'datasets\photo_to_monet\testA' and 'datasets\photo_to_monet\testB'.
+The pretrained model (iter=60000) is provided in 'checkpoints\photo_to_monet'. 
+
+Put images in corresponding folders:
+- photo_jpg content -> 'datasets\photo_to_monet\testA' 
+- monet_jpg  content -> 'datasets\photo_to_monet\testB'.
 
 Run 'test.py' will generate fake Monet images using the pretrained models.
 
