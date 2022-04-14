@@ -30,6 +30,8 @@ The generated Monet images can be downloaded from this [link](https://nusu-my.sh
 
 Here are some examples:
 
-![avatar](imgs\ef4a60107c.png)
-![avatar](imgs\f26d369fbd.png)
-![avatar](imgs\f37a93cd01.png)
+<img src='imgs/ef4a60107c.png' align="right" width=480>
+
+<img src='imgs/f26d369fbd.png' align="right" width=480>
+
+<img src='imgs/f37a93cd01.png' align="right" width=480>
