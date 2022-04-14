@@ -201,7 +201,7 @@ class BaseModel(ABC):
         """
         for name in self.model_names:
             if isinstance(name, str):
-                load_filename = '%s_net_%s.pth' % (epoch, name)
+                load_filename = 'iter_%s_net_%s.pth' % (epoch, name)
                 if self.opt.isTrain and self.opt.pretrained_name is not None:
                     load_dir = os.path.join(self.opt.checkpoints_dir, self.opt.pretrained_name)
                 else:

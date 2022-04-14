@@ -8,6 +8,8 @@ from util.visualizer import Visualizer
 
 if __name__ == '__main__':
     opt = TrainOptions().parse()   # get training options
+    opt.save_by_iter = True
+    opt.continue_train = True
     dataset = create_dataset(opt)  # create a dataset given opt.dataset_mode and other options
     dataset_size = len(dataset)    # get the number of images in the dataset.
 
@@ -16,7 +18,7 @@ if __name__ == '__main__':
 
     visualizer = Visualizer(opt)   # create a visualizer that display/save images and plots
     opt.visualizer = visualizer
-    total_iters = 0                # the total number of training iterations
+    total_iters = 75000                # the total number of training iterations
 
     optimize_time = 0.1
 
